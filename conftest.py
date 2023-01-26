@@ -40,7 +40,6 @@ def browser(request):
         browser = webdriver.Firefox(options=options_firefox,
                                     service=FirefoxService(GeckoDriverManager().install()))
 
-    browser.implicitly_wait(10)
     yield browser
     print("\nquit browser..")
     browser.quit()
