@@ -1,9 +1,15 @@
 from selenium.webdriver.common.by import By
 
 
-class MainPageLocators:
+class BasePageLocators:
     LOGIN_LINK = (
         By.ID, "login_link")
+    LOGIN_LINK_INVALID = (
+        By.ID, "login_link_inc")
+
+
+class MainPageLocators:
+    pass
 
 
 class LoginPageLocators:
