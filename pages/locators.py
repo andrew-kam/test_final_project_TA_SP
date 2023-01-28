@@ -24,3 +24,5 @@ class ProductPageLocators:
         By.CLASS_NAME, "alert-success strong")
     PRODUCT_PRICE_ADDED = (
         By.CLASS_NAME, "alert-info strong")
+    SUCCESS_MESSAGE = (
+        By.CLASS_NAME, "alert-success")
