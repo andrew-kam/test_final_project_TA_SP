@@ -6,6 +6,8 @@ class BasePageLocators:
         By.ID, "login_link")
     LOGIN_LINK_INVALID = (
         By.ID, "login_link_inc")
+    BASKET_LINK = (
+        By.CLASS_NAME, "btn-group .btn.btn-default")
 
 
 class MainPageLocators:
@@ -32,3 +34,12 @@ class ProductPageLocators:
         By.CLASS_NAME, "alert-info strong")
     SUCCESS_MESSAGE = (
         By.CLASS_NAME, "alert-success")
+
+
+class BasketPageLocators:
+    PRODUCT_PRICE_BASKET = (
+        By.CLASS_NAME, "price_color.align-right")
+    PRODUCT_IMG_BASKET = (
+            By.CLASS_NAME, "thumbnail")
+    BASKET_EMPTY_TEXT = (
+        By.CSS_SELECTOR, "#content_inner>p")
