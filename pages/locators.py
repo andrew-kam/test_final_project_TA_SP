@@ -37,9 +37,7 @@ class ProductPageLocators:
 
 
 class BasketPageLocators:
-    PRODUCT_PRICE_BASKET = (
-        By.CLASS_NAME, "price_color.align-right")
-    PRODUCT_IMG_BASKET = (
-            By.CLASS_NAME, "thumbnail")
+    PRODUCTS_IN_BASKET = (
+        By.ID, "basket_formset")
     BASKET_EMPTY_TEXT = (
         By.CSS_SELECTOR, "#content_inner>p")
