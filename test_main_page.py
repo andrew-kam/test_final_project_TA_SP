@@ -38,6 +38,3 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
 
 if __name__ == "__main__":
     pytest.main()
-
-# pytest -v -rpf --tb=line test_main_page.py
-# pytest -v -rpf --tb=line -m "login_guest" test_main_page.py
