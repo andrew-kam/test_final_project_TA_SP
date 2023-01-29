@@ -4,9 +4,7 @@ from .locators import BasketPageLocators
 
 class BasketPage(BasePage):
     def should_not_be_product_in_basket(self):
-        assert self.is_not_element_present(*BasketPageLocators.PRODUCT_IMG_BASKET), \
-            "Product is presented, but should not be"
-        assert self.is_not_element_present(*BasketPageLocators.PRODUCT_PRICE_BASKET), \
+        assert self.is_not_element_present(*BasketPageLocators.PRODUCTS_IN_BASKET), \
             "Product is presented, but should not be"
 
     def should_be_text_empty(self):
